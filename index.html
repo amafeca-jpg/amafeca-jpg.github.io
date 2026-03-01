@@ -142,6 +142,21 @@
     .card a:hover {
       background: #5d2f81;
     }
+
+    .tablero-embed {
+      margin-top: 20px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(106, 44, 145, 0.10);
+      background: #ffffff;
+    }
+
+    .tablero-embed iframe {
+      display: block;
+      width: 100%;
+      min-height: 650px;
+    }
+    
   </style>
 </head>
 <body>
@@ -200,7 +215,7 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
       <h2>Proyectos y resultados</h2>
       <div class="cards">
         <div class="card">
-          <h3>Imapcto de la vilolencia basada en género en áreas STEM</h3>
+          <h3>Impacto de la vilolencia basada en género en áreas STEM</h3>
           <p>El proyecto Impacto de la violencia basada en género en las áreas STEM analiza cómo las violencias basadas en género afectan la participación, permanencia y bienestar de las mujeres en estos campos, con el fin de visibilizar esta problemática y promover entornos académicos más seguros, equitativos e incluyentes.</p>
         </div>
         <div class="card">
@@ -244,18 +259,30 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
             Hacia una institución libre de VBG. Consulta la cartilla desarrollada por el grupo.</p>
           <a href="https://udeaeduco-my.sharepoint.com/:b:/g/personal/powerskills_ing_udea_edu_co/EVZf-4N5P4VCndpZpocXpfcB0Fus5a0K229qV_hEHYC7tA?e=ql9aEF" target="_blank">Ver cartilla</a>
         </div>
-
-        <div class="card">
-          <h3>Tablero VBG</h3>
-          <p>Explora el tablero con información y visualización de datos sobre VBG.</p>
-          <a href="AQUI_VA_EL_LINK_DEL_TABLERO" target="_blank">Ver tablero</a>
-        </div>
-
+      
         <div class="card">
           <h3>De la sensibilización a la acción: estrategias para la prevención de VBG en carreras STEM</h3>
           <p>Accede al artículo presentado en ACOFI.</p>
           <a href="https://acofipapers.org/index.php/eiei/article/view/4572/2912" target="_blank">Ver artículo</a>
         </div>
+      </div>
+    </section>
+
+    <section id="tablero">
+      <h2>Tablero de resultados VBG</h2>
+      <p>
+        Explora el tablero interactivo con los resultados del proyecto sobre violencias basadas en género en áreas STEM.
+      </p>
+
+      <div class="tablero-embed">
+        <iframe 
+          title="Tablero VBG powerBI"
+          width="100%"
+          height="650"
+          src="https://app.powerbi.com/reportEmbed?reportId=936cb995-94f5-4dbd-a26c-8b8053593cbe&autoAuth=true&ctid=fc00547a-24bb-4e4f-9d61-73fca5eb9df3"
+          frameborder="0"
+          allowFullScreen="true">
+        </iframe>
       </div>
     </section>
 
