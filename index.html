@@ -156,7 +156,31 @@
       width: 100%;
       min-height: 650px;
     }
-    
+
+    .lista-galeria {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 18px;
+    }
+
+    .lista-galeria li {
+      padding: 12px 0;
+      border-bottom: 1px solid #e9d8f5;
+    }
+
+    .lista-galeria li:last-child {
+      border-bottom: none;
+    }
+
+    .lista-galeria a {
+      color: #6a2c91;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .lista-galeria a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -271,18 +295,29 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
     </section>
 
     <section id="galeria">
-      <h2>Galería de eventos y charlas</h2>
+      <h2>Galería de fotos</h2>
       <p>
-        En este espacio compartimos algunos momentos de eventos, encuentros y charlas
-        en los que hemos participado.
+        En este espacio encontrarás el banco de fotografías organizado por eventos,
+        encuentros y actividades desarrolladas por el equipo.
       </p>
 
-      <div class="galeria-grid">
-        <img src="evento1.jpg" alt="Evento o charla 1">
-        <img src="evento2.jpg" alt="Evento o charla 2">
-        <img src="evento3.jpg" alt="Evento o charla 3">
-        <img src="evento4.jpg" alt="Evento o charla 4">
-      </div>
+      <ul class="lista-galeria">
+        <li>
+          <a href="https://drive.google.com/drive/folders/12VyeTImYQBEgdPGzojAMC6cgrUyEGgJk?usp=drive_link" target="_blank">Árbol de la equidad</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/19TJqN-iVav9DvN-E-r-CqQTbToYja49G?usp=drive_link" target="_blank">Articulación comité de género facultad e ingeniería UdeA</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1te4ErE5x-nV_9BicbbFCD5hqs_eYDj38?usp=sharing" target="_blank">Cátedra Matilda</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1pB_6TnH-T0HmFaITTLx0lW8YN0bus5i3?usp=sharing" target="_blank">Lanzamiento cartilla</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/drive/folders/1Jx3W1UO_ji4PU7XLU6jzEZ4entxMEons?usp=sharing" target="_blank">Primer encuentro de análisis de datos con enfoque de género</a>
+        </li>
+      </ul>
     </section>
 
     <section id="noticias">
