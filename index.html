@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -99,13 +99,31 @@
     }
 
     .miembro-card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  cursor: pointer;
-}
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      cursor: pointer;
+    }
+
+    .indicacion {
+      color: #8a63a8;
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+
+    .intereses {
+      display: none;
+      color: #2f1f3b;
+      font-size: 0.96rem;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    .miembro-card.activa .intereses {
+      display: block;
+    }
 
 .miembro-card:hover {
   transform: translateY(-4px);
@@ -250,48 +268,55 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
     </section>
 
     <section id="equipo">
-  <h2>Integrantes</h2>
+      <h2>Integrantes</h2>
 
-  <div class="equipo-grid">
-    <div class="miembro-card">
-      <img src="melisa.jpg" alt="Melisa Barrera">
-      <div class="miembro-info">
-        <h3>Melisa Barrera</h3>
-        <p>
-          Soy Melisa Barrera, Ingeniera Electrónica y Magíster en Ingeniería de la UPB, y Doctora en Ingeniería Eléctrica de la UNESP. Desde hace 20 años me desempeño como docente del Departamento de Ingeniería Eléctrica de la Universidad de Antioquia, donde coordino el Laboratorio de Domótica. Mi línea de investigación se centra en los Ambientes Inteligentes.
-          Mi meta profesional es consolidar una ingeniería con perspectiva de género que desmantele estereotipos y fomente el talento femenino en áreas STEM. Me distingo por una formación técnica sólida, la cual combino con una alta capacidad comunicativa para explicar procesos complejos con claridad y precisión. Mi estilo de liderazgo es esencialmente cálido y conciliador, orientado a la creación de soluciones efectivas y ambientes de trabajo equitativos.
-          Más allá de la academia, soy una entusiasta del deporte, de la lectura, del buen café y, por supuesto, ¡de un buen vino!
-        </p>
-      </div>
-    </div>
+      <div class="equipo-grid">
+        <div class="miembro-card">
+          <img src="melisa.jpg" alt="Melisa Barrera" onclick="toggleIntereses(this)">
+          <div class="miembro-info">
+            <h3>Melisa Barrera</h3>
+            <p class="indicacion">Haz clic en la foto para ver sus intereses</p>
+            <div class="intereses">
+              <p>
+                Sus intereses se centran en los ambientes inteligentes, la ingeniería con perspectiva de género,
+                la docencia universitaria y la promoción del talento femenino en áreas STEM. Además, disfruta
+                del deporte, la lectura, el buen café y un buen vino.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <div class="miembro-card">
-      <img src="adrianafonce.jpg" alt="Adriana Fonce">
-      <div class="miembro-info">
-        <h3>Adriana Fonce</h3>
-        <p>
-          Soy Adriana Fonce. Matemática, docente universitaria e investigadora. Formación en la Universidad del Cauca, maestría en la Universidade Federal de Goiás, doctorado en la Universidad de Antioquia y experiencia posdoctoral financiada por Minciencias.
-          Mi trayectoria articula las matemáticas, la investigación, el análisis de datos y el diseño de experiencias formativas en educación superior, con especial interés en la innovación educativa y en la transformación de los entornos STEM desde una perspectiva de género, derechos humanos y prevención de las violencias basadas en género.
-          Creo en una investigación rigurosa, crítica y comprometida con la construcción de espacios académicos más justos, inclusivos y equitativos.
-          Fuera de la academia, encuentro inspiración en el deporte, la buena comida y el verde de la montaña.
-        </p>
-      </div>
-    </div>
+        <div class="miembro-card">
+          <img src="adrianafonce.jpg" alt="Adriana Fonce" onclick="toggleIntereses(this)">
+          <div class="miembro-info">
+            <h3>Adriana Fonce</h3>
+            <p class="indicacion">Haz clic en la foto para ver sus intereses</p>
+            <div class="intereses">
+              <p>
+                Sus intereses incluyen las matemáticas, la investigación, el análisis de datos, la innovación educativa,
+                el enfoque de género, los derechos humanos, la prevención de las violencias basadas en género y la transformación
+                de los entornos STEM. También encuentra inspiración en el deporte, la buena comida y la montaña.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <div class="miembro-card">
-      <img src="carolina-nueva.jpeg" alt="Carolina Mesa">
-      <div class="miembro-info">
-        <h3>Carolina Mesa</h3>
-        <p>
-          Soy Carolina Mesa, Ingeniera Industrial de la Universidad de Antioquia y Magíster en Ingeniería de Producción, Gestión e Innovación (UFRJ, Brasil). Actualmente soy docente ocasional de Ingeniería Industrial en la UdeA y estudiante del Doctorado en Administración y Organizaciones.
-          Desde hace más de 10 años trabajo en proyectos de innovación, emprendimiento y educación, acompañando procesos con comunidades rurales y urbanas en distintas regiones del país. He liderado los componentes académicos de los programas como Somos Economías para la Vida, Antójate de Antioquia y Capital Semilla, fortaleciendo iniciativas de economía cultural y popular, especialmente con mujeres y comunidades indígenas.
-          Mis intereses están en innovación, mejoramiento continuo, emprendimiento, educación y desarrollo territorial. También me interesa investigar el impacto de las VBG en la academia y en las trayectorias de mujeres en STEM, y aportar desde la sensibilización y el conocimiento a la transformación de estos espacios.
-          Creo profundamente en las redes de mujeres que se apoyan, aprenden juntas y abren camino para las que vienen. 💜
-        </p>
+        <div class="miembro-card">
+          <img src="carolina-nueva.jpeg" alt="Carolina Mesa" onclick="toggleIntereses(this)">
+          <div class="miembro-info">
+            <h3>Carolina Mesa</h3>
+            <p class="indicacion">Haz clic en la foto para ver sus intereses</p>
+            <div class="intereses">
+              <p>
+                Sus intereses están en innovación, mejoramiento continuo, emprendimiento, educación, desarrollo territorial
+                e investigación sobre el impacto de las VBG en la academia y en las trayectorias de mujeres en STEM.
+                Cree profundamente en las redes de mujeres que se apoyan, aprenden juntas y abren camino para las que vienen.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="recursos">
       <h2>Recursos de consulta</h2>
