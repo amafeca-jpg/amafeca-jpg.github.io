@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Grupo de Investigación</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -264,7 +266,7 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
 
       <div class="equipo-grid">
         <div class="miembro-card">
-          <img src="melisa.jpg" alt="Melisa Barrera" onclick="toggleIntereses(this)">
+          <img src="melisa.jpg" alt="Melisa Barrera">
           <div class="miembro-info">
             <h3>Melisa Barrera</h3>
             <p class="indicacion">Haz clic en la foto para ver sus intereses</p>
@@ -279,7 +281,7 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
         </div>
 
         <div class="miembro-card">
-          <img src="adrianafonce.jpg" alt="Adriana Fonce" onclick="toggleIntereses(this)">
+          <img src="adrianafonce.jpg" alt="Adriana Fonce">
           <div class="miembro-info">
             <h3>Adriana Fonce</h3>
             <p class="indicacion">Haz clic en la foto para ver sus intereses</p>
@@ -294,7 +296,7 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
         </div>
 
         <div class="miembro-card">
-          <img src="carolina-nueva.jpeg" alt="Carolina Mesa" onclick="toggleIntereses(this)">
+          <img src="carolina-nueva.jpeg" alt="Carolina Mesa">
           <div class="miembro-info">
             <h3>Carolina Mesa</h3>
             <p class="indicacion">Haz clic en la foto para ver sus intereses</p>
@@ -317,13 +319,13 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
           <h3>Sensibilizar para transformar: 
             Hacia una institución libre de VBG.</h3>
           <p>Consulta la cartilla desarrollada por el grupo.</p>
-          <a href="https://udeaeduco-my.sharepoint.com/:b:/g/personal/powerskills_ing_udea_edu_co/EVZf-4N5P4VCndpZpocXpfcB0Fus5a0K229qV_hEHYC7tA?e=ql9aEF" target="_blank">Ver cartilla</a>
+          <a href="https://udeaeduco-my.sharepoint.com/:b:/g/personal/powerskills_ing_udea_edu_co/EVZf-4N5P4VCndpZpocXpfcB0Fus5a0K229qV_hEHYC7tA?e=ql9aEF" target="_blank" rel="noopener noreferrer">Ver cartilla</a>
         </div>
       
         <div class="card">
           <h3>De la sensibilización a la acción: estrategias para la prevención de VBG en carreras STEM</h3>
           <p>Accede al artículo presentado en ACOFI.</p>
-          <a href="https://acofipapers.org/index.php/eiei/article/view/4572/2912" target="_blank">Ver artículo</a>
+          <a href="https://acofipapers.org/index.php/eiei/article/view/4572/2912" target="_blank" rel="noopener noreferrer">Ver artículo</a>
         </div>
       </div>
     </section>
@@ -362,7 +364,7 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
 
       <ul class="lista-noticias">
         <li>
-          <a href="https://www.udea.edu.co/wps/portal/udea/web/generales/interna/Unidades+Acad%21c3%21a9micas/Ingenier%21c3%21ada/asContenidos/listado-noticia/mujeres-stem-armas-destruccion-matematica?utm_source=brevo&utm_campaign=Boletn%20Electrnico%20Ingeniemos%20%20ED%20865&utm_medium=email&utm_id=986" target="_blank">Nota institucional</a>
+          <a href="https://www.udea.edu.co/wps/portal/udea/web/generales/interna/Unidades+Acad%21c3%21a9micas/Ingenier%21c3%21ada/asContenidos/listado-noticia/mujeres-stem-armas-destruccion-matematica?utm_source=brevo&utm_campaign=Boletn%20Electrnico%20Ingeniemos%20%20ED%20865&utm_medium=email&utm_id=986" target="_blank" rel="noopener noreferrer">Nota institucional</a>
           <span> — Participación en la Catedra Matilda.</span>
         </li>
       </ul>
@@ -394,12 +396,12 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
       <h2>Instagram</h2>
       <p>
         Síguenos en:
-        <a href="https://www.instagram.com/profas_stem/" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/profas_stem/" target="_blank" rel="noopener noreferrer">
           @profas_stem
         </a>
       </p>
 
-      <a class="btn" href="https://www.instagram.com/profas_stem/" target="_blank" rel="noopener">
+      <a class="btn" href="https://www.instagram.com/profas_stem/" target="_blank" rel="noopener noreferrer">
         Ver Instagram
       </a>
     </section>
@@ -420,11 +422,6 @@ Más que un grupo de trabajo, somos una red de apoyo, análisis y acción que bu
   <footer>
     <p>© 2026 TEAM Género +💜 - Todos los derechos reservados</p>
   </footer>
-<script>
-  function toggleIntereses(img) {
-    const card = img.parentElement;
-    card.classList.toggle("activa");
-  }
-</script>
+<script src="app.js"></script>
 </body>
 </html>
